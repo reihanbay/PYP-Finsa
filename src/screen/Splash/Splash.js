@@ -7,7 +7,7 @@ class Splash extends React.Component{
   async componentDidMount(){
     const data= await this.performTimeConsumingTask();
     if(data !== null){
-      this.props.navigation.navigate('Intro')
+      this.props.navigation.navigate('Onboard')
     }
   }
   performTimeConsumingTask = async () =>

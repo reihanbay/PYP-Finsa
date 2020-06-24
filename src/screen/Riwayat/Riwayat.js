@@ -19,23 +19,6 @@ class Riwayat extends React.Component{
       </View>
     )
   }
-  _saldo =()=>{
-    const saldo= 450000
-    const tabung= 850000
-    return(
-      <View style={[styles.containerCardSaldo,styles.shadowContainer]}>
-        <TouchableOpacity style={styles.containerSaldo}>
-          <Text style={styles.textSaldo}>Saldo Saku</Text>
-          <Text style={styles.valueSaldo}>Rp.{saldo}</Text>
-        </TouchableOpacity>
-        <View style={{height:92,width: 2,backgroundColor:'#F1F1F1'}}/>
-        <TouchableOpacity style={styles.containerSaldo}>
-          <Text style={styles.textSaldo}>Tabungan</Text>
-          <Text style={styles.valueSaldo}>Rp. {tabung}</Text>
-        </TouchableOpacity>
-      </View>
-    )
-  }
   render(){
     const nama=' Sindy '
     return(

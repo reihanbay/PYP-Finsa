@@ -16,21 +16,20 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: 'flex-start',
         flexDirection: 'column',
-        backgroundColor: '#B5FFF9'
+        backgroundColor: `#11E69F` 
     },
     shadowContainer:{
-        shadowColor: "#F1F1F1",
         shadowOffset: {
             width: 0,
-            height: 6,
+            height: 3,
         },
-        shadowOpacity: 0.2,
+        shadowOpacity: 1,
         shadowRadius: 10,
 
-        elevation: 10,
+        elevation: 12,
     },
     textCardColor :{
-        color: '#279F96',
+        color: 'white',
     },
     titleTabungan:{
         fontSize: 16,
@@ -80,8 +79,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     modalBox: {
-        paddingVertical:16,
-        paddingHorizontal:18,
+        padding: 20,
         width: 296,
         height: 120,
         backgroundColor: 'white',
@@ -89,8 +87,6 @@ const styles = StyleSheet.create({
         alignItems:'center',
     },
     contentModal:{
-        marginHorizontal:18,
-        marginVertical:16,
         justifyContent: 'center',
         alignItems:'center',
     },

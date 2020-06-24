@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     thumb:{
+        borderRadius:50,
         width: 50,
         height: 50
     },

@@ -23,12 +23,20 @@ class Tabungan extends React.Component{
   modal = () =>{
     return(
       <Modal isVisible={this.state.isModalVisible} style={styles.modal}>
-        <View style={styles.modalBox}>
+        <View style={{
+        padding: 20,
+        width: 296,
+        height: 160,
+        backgroundColor: 'white',
+        borderRadius: 6,
+        alignItems:'center',
+        }}>
           <View style={styles.contentModal}>
-            <Text style={styles.headerModal}>Apakah Anda Ingin Keluar?</Text>
+            <Text style={styles.headerModal}>Apakah Anda Ingin Mengambil?</Text>
+            <Text style={{fontSize:14, color:'#C8CDD5',textAlign:'center',width:260,marginTop: 10,marginBottom: -10}}>Silahkan beritahukan riwayat kepada admin di sekolahmu jika menabung</Text>
               <View style={styles.containerBtnModal}>
                 <TouchableOpacity style={[styles.btnModal,styles.btn1]} onPress={()=> this.props.navigation.navigate('SignIn')}> 
-                  <Text style={[styles.txtBtnModal,styles.txtBtn1]}>Keluar</Text>
+                  <Text style={[styles.txtBtnModal,styles.txtBtn1]}>Ambil</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.btnModal,styles.btn2]} onPress={this.toggleModal}> 
                   <Text style={[styles.txtBtnModal,styles.txtBtn2]}>Tidak</Text>
@@ -55,13 +63,13 @@ class Tabungan extends React.Component{
           </View>
         </View>
 
-        {/* Input Tabung */}
+        {/* Input Ambil Tabungan */}
         <View style={styles.containerInputTabung}> 
           <View style={styles.containerInput}>
             {this.textInput()}
           </View>
           <TouchableOpacity style={[styles.btnTabung,styles.btn1]} onPress={this.toggleModal}> 
-            <Text style={[styles.txtBtnModal,styles.txtBtn1]}>Tabung</Text>
+            <Text style={[styles.txtBtnModal,styles.txtBtn1]}>Ambil</Text>
           </TouchableOpacity>
             {this.modal()} 
         </View>

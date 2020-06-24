@@ -42,8 +42,8 @@ class Stats extends React.Component{
         // <ScrollView style={{backgroundColor: 'white'}}>
         <Container style={styles.containerStyle}>
             <View style={styles.containerProfile}>
-              <Thumbnail style={styles.thumb} source={require('../../../assets/icon/hAkun.png')}/>
-              <Text style={styles.opening}>Hallo {nama},</Text>
+              <Thumbnail style={styles.thumb} source={require('../../../assets/icon/thumb.png')}/>
+              <Text style={styles.opening}>Hallo{nama},</Text>
             </View>
             {this._saldo()}
             <Chart/>

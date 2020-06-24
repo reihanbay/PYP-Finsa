@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         padding: 32
     },
     partImage:{
-        margin: 8,
+        marginBottom: 40,
         alignItems:'center',
         justifyContent: 'center',
     },

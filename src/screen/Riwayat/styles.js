@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         backgroundColor:'white'
     },
     headerContainer:{
-        width: Dimensions.get("window").width,
+        width: Dimensions.get("window").width=312,
         marginBottom: 15,
         flexDirection:'row',
         justifyContent: 'space-between',
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
         color: '#11E69F'
     },
     historyContainer:{
-        width: Dimensions.get("window").width,
+        width: Dimensions.get("window").width=312,
         margin: 12,
         flexDirection:'row',
         justifyContent: 'space-between',
