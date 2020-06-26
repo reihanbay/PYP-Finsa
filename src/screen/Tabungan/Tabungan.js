@@ -35,7 +35,7 @@ class Tabungan extends React.Component{
             <Text style={styles.headerModal}>Apakah Anda Ingin Mengambil?</Text>
             <Text style={{fontSize:14, color:'#C8CDD5',textAlign:'center',width:260,marginTop: 10,marginBottom: -10}}>Silahkan beritahukan riwayat kepada admin di sekolahmu jika menabung</Text>
               <View style={styles.containerBtnModal}>
-                <TouchableOpacity style={[styles.btnModal,styles.btn1]} onPress={()=> this.props.navigation.navigate('SignIn')}> 
+                <TouchableOpacity style={[styles.btnModal,styles.btn1]} onPress={this.toggleModal}> 
                   <Text style={[styles.txtBtnModal,styles.txtBtn1]}>Ambil</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.btnModal,styles.btn2]} onPress={this.toggleModal}> 

@@ -34,6 +34,7 @@ import caraBayar from "../screen/aboutPayment/caraBayar/Bayar";
 import caraNabung from "../screen/aboutPayment/caraNabung/Nabung";
 import Onboard from "../screen/OnBoard/OnBoard";
 import SignIn from '../screen/SignIn/SignIn';
+import ListKantin from '../screen/ListKantin/ListKantin';
 import InfoApp from '../screen/InfoApp/InfoApp';
 import Riwayat from '../screen/Riwayat/Riwayat';
 import Tabungan from '../screen/Tabungan/Tabungan';
@@ -146,13 +147,14 @@ class Route extends React.Component {
   
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Bottom Tabs" >
+      <Stack.Navigator initialRouteName="Splash" >
         <Stack.Screen name="Splash" component={Splash} options={noHeader}/>
         <Stack.Screen name="Onboard" component={Onboard} options={noHeader}/>
         <Stack.Screen name="Intro" component={Intro} options={noHeader}/>
         <Stack.Screen name="SignIn" component={SignIn} options={noHeader}/>
         <Stack.Screen name="SignUp" component={SignUp} options={noHeader}/>
         <Stack.Screen name="Ubah Akun" component={changeProfile} options={style}/>
+        <Stack.Screen name="List Kantin" component={ListKantin} options={style}/>
         <Stack.Screen name="Temukan Akun Anda" component={Forgot} options={style}/>
         <Stack.Screen name="Bantuan" component={Help} options={style}/>
           <Stack.Screen name="Tentang Akun Saya" component={aboutAccount} options={style}/>

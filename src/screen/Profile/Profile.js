@@ -31,7 +31,7 @@ class Profile extends React.Component{
           {/* Identity */}
           <View style={styles.containerIdentity}>
             <Left style={styles.identityThumbnail}>
-              <Thumbnail small source={require('../../../assets/icon/hAkun.png')}/>
+              <Thumbnail small source={require('../../../assets/icon/thumb.png')}/>
             </Left>
             <View style={styles.textContainerIdentity}>
               <Text style={[styles.identityTextColor,styles.name]}>{name}</Text>

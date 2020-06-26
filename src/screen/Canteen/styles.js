@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native'
 const styles = StyleSheet.create({
     containerStyle : {
         flex: 1,
-        padding: 32,
+        paddingVertical: 32,
         alignItems:'center',
         justifyContent: 'center',
         backgroundColor: 'white'
@@ -12,93 +12,81 @@ const styles = StyleSheet.create({
         width: 296,
         flexDirection: 'column',
         margin: 0,
-        marginBottom: 20
+        marginBottom: 15
     },
     h1:{
-        fontSize : 28,
-        marginBottom: 4,
+        fontSize : 20,
+        marginBottom: 10,
         fontWeight: 'bold'
     },
-    subHeader:{
-        fontSize: 16,
-        color: '#C0C6CF'
+    contentContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: 10
     },
-    containerLogo: {
-        marginVertical: 16,
-        width: 130, 
-        height: 130, 
-        justifyContent: 'center',
+    cardContainer: {
+        width: 120,
+        height: 200,
+        borderRadius: 20,
+        marginBottom: 20,
+        backgroundColor:'white',
+        justifyContent: 'space-evenly'
+    },
+    content: {
+        alignItems: 'center'
+    },
+    shadowContainer:{
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.20,
+        shadowRadius: 1.41,
+
+        elevation: 2,
+    },
+    img: {
+        resizeMode: 'contain',
+        width: 40 ,
+        height: 40,
+        marginVertical: 15,
+        alignItems: 'center'
     },
     icon: {
-        flex: 1,
-        width:  undefined,
-        height: undefined,
-        resizeMode: 'contain'
+        resizeMode: 'contain',
+        width: 30,
+        height: 30,
+        marginVertical: 15,
+        alignItems: 'center'
     },
-    containerForm:{
-        marginTop: 13,
-        marginHorizontal: -15
+    text: {
+        color: "gray",
+        fontSize: 16
     },
-    colorLabel:{
-        color: '#C0C6CF',
-        marginBottom: -5
+    kantinContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
     },
-    marginForm:{
-        marginBottom: 16
-    },
-    containerButton:{
-        alignItems:'center',
-        justifyContent: 'center',
-        width: 296,
-        marginVertical: 20
-    },
-    button:{
-        alignItems:'center',
-        justifyContent: 'center',
-        backgroundColor: '#11E69F',
-        width: 296,
-        height: 60,
-        borderRadius: 30,
-    },
-    textBtn: {
-        fontWeight: '400',
-        fontSize: 16,
-        color: 'white'
-
-    },
-    modal:  {
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    modalBox: {
-        paddingVertical:29,
-        paddingHorizontal:17,
-        width: 296,
-        height: 198,
+    cardKantin: {
+        width: 140,
+        height: 155,
+        borderRadius: 20,
         backgroundColor: 'white',
-        borderRadius: 6
+        marginVertical: 10,
+        alignItems: 'center',
+        overflow: 'hidden'
     },
-    headerModal:{
-        color: '#203354',
-        fontWeight: '400',
-        fontSize: 16,
-        marginBottom: 20
+    seeAll: {
+        color: '#11E69F'
     },
-    textModal:{
-        color: '#636363',
-        fontWeight: '400',
-        fontSize: 16,
-        marginBottom: 20
-    },
-    btnModal:{
-        width: 262,
-        alignItems: 'flex-end',
-        marginTop: 20
-    },
-    txtBtnModal:{
-        color: '#11E69F',
-        fontWeight: '400',
-        fontSize: 16,
+    imgKantin: {
+        resizeMode: 'contain',
+        width: 140,
+        height: 120,
+        marginBottom: 5
     },
     footer:{
         flex:1,

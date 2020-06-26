@@ -39,7 +39,7 @@ class Payment extends React.Component{
             <Text style={styles.headerModal}>Apakah Anda Ingin Menabung?</Text>
             <Text style={{fontSize:14, color:'#C8CDD5',textAlign:'center',width:260,marginTop: 10,marginBottom: -10}}>Saldo anda akan dikurangkan sebagian untuk menabung</Text>
               <View style={styles.containerBtnModal}>
-                <TouchableOpacity style={[styles.btnModal,styles.btn1]} onPress={()=> this.props.navigation.navigate('SignIn')}> 
+                <TouchableOpacity style={[styles.btnModal,styles.btn1]} onPress={this.toggleModal}> 
                   <Text style={[styles.txtBtnModal,styles.txtBtn1]}>Bayar</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.btnModal,styles.btn2]} onPress={this.toggleModal}> 
@@ -77,7 +77,7 @@ class Payment extends React.Component{
           <View style={styles.contentModal}>
             <Text style={styles.headerModal}>Apakah Anda Ingin Membayar?</Text>
               <View style={styles.containerBtnModal}>
-                <TouchableOpacity style={[styles.btnModal,styles.btn1]} onPress={()=> this.props.navigation.navigate('SignIn')}> 
+                <TouchableOpacity style={[styles.btnModal,styles.btn1]} onPress={this.toggleModal}> 
                   <Text style={[styles.txtBtnModal,styles.txtBtn1]}>Bayar</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.btnModal,styles.btn2]} onPress={this.toggleModal}> 

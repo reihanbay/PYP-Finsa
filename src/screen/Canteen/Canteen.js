@@ -4,7 +4,7 @@ import { Container,Content, Form, Item, Input, Label, H1, Icon, Picker } from 'n
 import Modal from 'react-native-modal';
 import styles from "./styles";
 
-class SignIn extends React.Component{
+class Canteen extends React.Component{
   constructor(props) {
     super(props);
     this.state = {};
@@ -21,60 +21,70 @@ class SignIn extends React.Component{
   render(){
     return(
       <Container style={styles.containerStyle}>
-        <View style={styles.header}>
-            <H1 style={styles.h1}>Welcome Back,</H1>
-            <Text style={styles.subHeader}>Sign in to continue</Text>
-        </View>
-        <View style={styles.containerLogo}>
-          <Image  source={require('../../../assets/logo2.png')} style={styles.icon}/>
-        </View>
         <Content>
-          <Form style={styles.containerForm}>
-            <Item stackedLabel style={styles.marginForm}>
-              <Label style={styles.colorLabel}>Username</Label>
-              <Input style={{color: "#C0C6CF"}}/>
-            </Item>
-            <Item stackedLabel style={styles.marginForm}>
-              <Label style={styles.colorLabel}>Password</Label>
-              <Input style={{color: "#C0C6CF"}}/>
-              <Icon active={true} name='eye'/>
-            </Item>
-          </Form>
-          <View style={styles.containerButton}>
-            <TouchableOpacity style={styles.button} onPress={this.toggleModal}>
-              <Text style={[styles.text,styles.textBtn]}>Sign In</Text>
-            </TouchableOpacity>
-            <Modal isVisible={this.state.isModalVisible} style={styles.modal}>
-              <View style={styles.modalBox}>
-                <Text style={styles.headerModal}>Sign In Gagal</Text>
-                <Text style={styles.textModal}>Pastikan Anda telah memasukkan  semua kolom dengan benar</Text>
-                <TouchableOpacity style={styles.btnModal} onPress={this.toggleModal}> 
-                  <Text style={styles.txtBtnModal}>COBA LAGI</Text>
-                </TouchableOpacity>
+          <View style={styles.header}> 
+            <H1 style={styles.h1}>Pilih Kategori</H1>
+          </View>
+          <View style={styles.contentContainer}>
+            <TouchableOpacity>
+              <View style={[styles.cardContainer, styles.shadowContainer]}>
+                <View style={styles.content}>
+                  <Image source={require('../../../assets/icon/kantin.png')} style={styles.img}/>
+                  <Text style={styles.text}>Kantin</Text>
+                  <Image source={require('../../../assets/icon/next.png')} style={styles.icon}/>
+                </View>
               </View>
-            </Modal>
-          </View>
-          <View>
-            <TouchableOpacity style={{justifyContent: 'flex-start'}} onPress={()=> this.props.navigation.navigate('Forgot')}>
-              <Text style={{color: '#636363', fontWeight: '400'}}> 
-                Forgot password?
-              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={[styles.cardContainer, styles.shadowContainer]}>
+                <View style={styles.content}>
+                  <Image source={require('../../../assets/icon/kantin1.png')} style={styles.img}/>
+                  <Text style={styles.text}>Koperasi</Text>
+                  <Image source={require('../../../assets/icon/next.png')} style={styles.icon}/>
+                </View>
+              </View>
             </TouchableOpacity>
           </View>
-          <View style={styles.footer}>
-            <Text style={{color: '#C0C6CF', fontWeight: '400'}}>
-              Don’t have an account? 
-            </Text>  
-            <TouchableOpacity onPress={()=> this.props.navigation.navigate('SignUp')}>
-              <Text style={{color: '#11E69F', fontWeight: '400'}}> 
-              Create Now 
-              </Text>
+          <View style={styles.kantinContainer}>
+            <View> 
+              <H1 style={styles.h1}>Kantin</H1>
+            </View>
+            <TouchableOpacity onPress={()=> this.props.navigation.navigate('List Kantin')}>
+              <Text style={styles.seeAll}>Lihat semua</Text>
             </TouchableOpacity>
-          </View>    
+          </View>
+          <View style={styles.kantinContainer}>
+            <TouchableOpacity>
+              <View style={[styles.cardKantin, styles.shadowContainer]}>
+                <Image source={require('../../../assets/kantin18.png')} style={styles.imgKantin}/>
+                <Text>Kantin 18</Text>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={[styles.cardKantin, styles.shadowContainer]}>
+                <Image source={require('../../../assets/kantin18.png')} style={styles.imgKantin}/>
+                <Text>Kantin Qyta</Text>
+              </View>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.kantinContainer}>
+            <TouchableOpacity>
+              <View style={[styles.cardKantin, styles.shadowContainer]}>
+                <Image source={require('../../../assets/kantin18.png')} style={styles.imgKantin}/>
+                <Text>Kantin 18</Text>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={[styles.cardKantin, styles.shadowContainer]}>
+                <Image source={require('../../../assets/kantin18.png')} style={styles.imgKantin}/>
+                <Text>Kantin Qyta</Text>
+              </View>
+            </TouchableOpacity>
+          </View>
         </Content>
       </Container>
     )
   }
 }
-export default SignIn; 
+export default Canteen; 
 
